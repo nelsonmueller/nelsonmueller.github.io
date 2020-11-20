@@ -18,7 +18,9 @@ body {
   font-family: 'Raleway';
 }
 
-
+.navbar-collapse {
+  text-align: right;
+}
 
 .color-section {
   background-image: linear-gradient(to right, #9ba4b4, #394867);
@@ -50,8 +52,7 @@ body {
 .about {
   background-color: #f1f6f9;
   color: #394867;
-  text-align: left;
-  padding: 110px 80px 150px 80px;
+  padding: 100px 80px 100px 80px;
 }
 
 .aboutTitle {
@@ -69,6 +70,35 @@ body {
   transition: 0.5s;
   background-image: linear-gradient(to right, #f1f6f9, #14274e);
 }
+
+img {
+  width: 76%;
+  height: auto;
+  position: relative;
+}
+
+.about-description {
+  position: relative;
+  text-align: justify;
+}
+
+
+.aboutTop {
+  margin-bottom: 20px;
+}
+
+#aboutName {
+  font-size: 40px;
+  color: #14274e;
+  font-family: 'Zeyada', cursive;
+  font-weight: 400;
+}
+
+#aboutSentence {
+    color: #9ba4b4;
+    font-weight: 400;
+}
+
 
 .projects {
   background-color: #394867;
@@ -94,33 +124,6 @@ body {
   transition: 0.5s;
 }
 
-.about-picture img {
-  width: 20%;
-  height: auto;
-  position: absolute;
-}
-
-.about-description {
-  position: relative;
-  margin-left: 300px;
-  text-align: justify;
-}
-
-.aboutTop {
-  margin-bottom: 20px;
-}
-
-#aboutName {
-  font-size: 40px;
-  color: #14274e;
-  font-family: 'Zeyada', cursive;
-  font-weight: 400;
-}
-
-#aboutSentence {
-    color: #9ba4b4;
-    font-weight: 400;
-}
 
 .project-top-part {
   margin-bottom: 40px;
@@ -189,6 +192,12 @@ body {
 .wyoum {
   margin-bottom: 50px;
 }
+.bittyBumbleBee {
+  margin-bottom: 50px;
+}
+.han {
+  margin-bottom: 50px;
+}
 
 .button-footer {
     margin: 13px 8px 0 8px;
@@ -197,11 +206,6 @@ body {
 
 .button-footer:hover {
   border: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .goTop {
@@ -225,4 +229,39 @@ a .fas:hover {
 
 .paragraphDot {
   color: #9ba4b4;
+}
+
+@media (max-width: 1095px) {
+
+  #title {
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .about {
+    padding: 50px 20px;
+  }
+
+  .about-picture {
+    transform: rotate(0);
+    position: static;
+    padding-bottom: 20px;
+  }
+
+  .projects {
+      padding: 50px 20px;
+  }
+
+  .contact {
+      padding: 60px 20px;
+  }
+
+  #projectButton {
+    margin-top: 50px;
+  }
+
+  .websites {
+    text-align: center;
+  }
+
 }
